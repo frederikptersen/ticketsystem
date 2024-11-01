@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'admin') {
+    header('Location: login.php');
+    exit();
+}
     require("./Assets/Functions/Overview_functions.php");
     $DB_Connection = new Overview;
     $ErrorGen = $DB_Connection->CheckError();
