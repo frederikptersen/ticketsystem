@@ -1,10 +1,10 @@
 <?php
-session_start();
+#session_start();
 
-if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'admin') {
-    header('Location: login.php');
-    exit();
-}
+#if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'admin') {
+#    header('Location: login.php');
+#    exit();
+#}
 
     require("./Assets/Functions/View_functions.php");
     $DB_Connection = new ViewFunctions;
