@@ -21,7 +21,7 @@ session_start();
                         <th>Date Submitted</th>
                         <th>User</th>
                         <th>Priority</th>
-                        <th>Reaction count</th>
+                        <th>Reaction Count</th>
                         <th>Options</th>
                     </tr>
                 </thead>

@@ -8,8 +8,8 @@
 
         public function __construct(){
             $DatabaseHost = "localhost";
-            $DatabaseUsername = "root"; // CHANGE THIS TO A DIFFERENT USERNAME!
-            $DatabasePassword = "retmig"; // CHANGE THIS TO A DIFFERENT PASSWORD!
+            $DatabaseUsername = "root"; // DB Username
+            $DatabasePassword = "retmig"; // DB Password
             $DatabaseName = "php_ticketsystem";
 
             try {
@@ -20,7 +20,6 @@
             }
         }
 
-        // Pretty Print is a fuction that exports all data you put in a nice to read format using the HTML <pre> and the PHP print_r functions
         public function prettyprint($arr){
             echo '<pre>';
                 print_r($arr);
